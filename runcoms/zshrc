@@ -16,3 +16,7 @@ stty -ixon
 stty -ixoff
 
 export PATH=~/bin:~/util:$PATH
+
+. ~/.aliases.sh
+
+
