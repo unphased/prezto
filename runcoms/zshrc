@@ -19,4 +19,3 @@ export PATH=~/bin:~/util:$PATH
 
 . ~/.aliases.sh
 
-
