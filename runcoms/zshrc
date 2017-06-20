@@ -21,3 +21,4 @@ export PATH=~/bin:~/util:$PATH
 
 . ~/.aliases.sh
 
+export KEYTIMEOUT=1
