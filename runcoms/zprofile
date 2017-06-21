@@ -5,8 +5,6 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-echo "executing zprofile"
-
 #
 # Browser
 #
