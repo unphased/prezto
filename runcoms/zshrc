@@ -24,7 +24,7 @@ export PATH=~/Documents/personal-utility/scripts:$PATH
 
 export KEYTIMEOUT=10
 
-# bindkey '^?' backward-delete-char
+bindkey "\e" backward-delete-word
 
 bindkey "\eOc" forward-word
 bindkey "\eOd" backward-word
