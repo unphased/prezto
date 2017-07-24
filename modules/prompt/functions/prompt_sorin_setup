@@ -66,7 +66,7 @@ function prompt_sorin_precmd {
   unsetopt XTRACE KSH_ARRAYS
 
   # Format PWD.
-  _prompt_sorin_pwd=$(promptpwd)
+  _prompt_sorin_pwd=$(prompt-pwd)
 
   # Kill the old process of slow commands if it is still running.
   async_flush_jobs async_sorin_git
