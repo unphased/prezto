@@ -56,7 +56,8 @@ function _terminal-set-titles-with-command {
     )
   else
     # Set the command name, or in the case of sudo or ssh, the next command.
-    local cmd="${${2[(wr)^(*=*|sudo|ssh|-*)]}:t}"
+    # local cmd="${${2[(wr)^(*=*|sudo|ssh|-*)]}:t}"
+    local cmd="${1}"
     local truncated_cmd="${cmd/(#m)?(#c15,)/${MATCH[1,12]}...}"
     unset MATCH
 
@@ -79,9 +80,9 @@ function _terminal-set-titles-with-path {
   unset MATCH
 
   if [[ "$TERM" == screen* || "$TERM" == tmux* ]]; then
-    set-multiplexer-title "$truncated_path"
+    # set-multiplexer-title "$abbreviated_path"
   fi
-  set-tab-title "$truncated_path"
+  set-tab-title "$abbreviated_path"
   set-window-title "$abbreviated_path"
 }
 
