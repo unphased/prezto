@@ -175,13 +175,13 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 zstyle ':prezto:module:terminal' auto-title 'always'
 
 # Set the window title format.
-zstyle ':prezto:module:terminal:window-title' format '%s (window)'
+zstyle ':prezto:module:terminal:window-title' format '%s'
 
 # Set the tab title format.
-zstyle ':prezto:module:terminal:tab-title' format '%s (tab)'
+zstyle ':prezto:module:terminal:tab-title' format '%s'
 
 # Set the terminal multiplexer title format.
-zstyle ':prezto:module:terminal:multiplexer-title' format '%s (multiplexer)'
+zstyle ':prezto:module:terminal:multiplexer-title' format '%s'
 
 #
 # Tmux
