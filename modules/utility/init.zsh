@@ -157,8 +157,6 @@ else
   alias df='df -kh'
 fi
 
-alias du='du -kh'
-
 if [[ "$OSTYPE" == (darwin*|*bsd*) ]]; then
   alias topc='top -o cpu'
   alias topm='top -o vsize'
