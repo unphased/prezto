@@ -21,6 +21,10 @@ export EDITOR='vim'
 export VISUAL='vim'
 export PAGER='less'
 
+if [[ "$OSTYPE" == darwin* ]]; then
+  export PAGER=/usr/local/bin/less
+fi
+
 #
 # Language
 #
