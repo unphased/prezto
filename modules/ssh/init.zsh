@@ -15,6 +15,7 @@ _ssh_dir="$HOME/.ssh"
 
 # Set the path to the environment file if not set by another module.
 _ssh_agent_env="${_ssh_agent_env:-${TMPDIR:-/tmp}/ssh-agent.env.$UID}"
+echo _ssh_agent_env $_ssh_agent_env
 
 # Set the path to the persistent authentication socket.
 _ssh_agent_sock="${TMPDIR:-/tmp}/ssh-agent.sock.$UID"
@@ -27,6 +28,7 @@ if [[ ! -S "$SSH_AUTH_SOCK" ]]; then
   # Start ssh-agent if not started.
   if ! ps -U "$LOGNAME" -o pid,ucomm | grep -q -- "${SSH_AGENT_PID:--1} ssh-agent"; then
     eval "$(ssh-agent | sed '/^echo /d' | tee "$_ssh_agent_env")"
+    echo started ssh-agent.
   fi
 fi
 
