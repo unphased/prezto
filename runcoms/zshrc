@@ -19,7 +19,6 @@ stty -ixoff
 
 export PATH=~/bin:~/util:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
-export PATH=~/Documents/personal-utility/scripts:$PATH
 
 . ~/.aliases.sh
 
