@@ -17,7 +17,6 @@ fi
 stty -ixon
 stty -ixoff
 
-export PATH=/sbin:$PATH
 export PATH=~/util:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
 
