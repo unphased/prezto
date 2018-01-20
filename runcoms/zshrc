@@ -17,7 +17,8 @@ fi
 stty -ixon
 stty -ixoff
 
-export PATH=~/bin:~/util:$PATH
+export PATH=/sbin:$PATH
+export PATH=~/util:$PATH
 export PATH="$HOME/.cargo/bin:$PATH"
 
 . ~/.aliases.sh
