@@ -17,9 +17,6 @@ fi
 stty -ixon
 stty -ixoff
 
-export PATH=~/util:$PATH
-export PATH="$HOME/.cargo/bin:$PATH"
-
 . ~/.aliases.sh
 
 export KEYTIMEOUT=10
