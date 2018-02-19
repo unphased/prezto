@@ -47,4 +47,9 @@ bindkey "\e\e[D" backward-word
 bindkey "\e[1~" beginning-of-line
 bindkey "\e[4~" end-of-line
 
+# trigger fzf
+fzf_widget() fzf
+zle -N fzf_widget
+bindkey "" fzf_widget
+
 setopt NO_NOMATCH
