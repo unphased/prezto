@@ -69,3 +69,4 @@ fi
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH=~/util:$PATH
 export PATH=~/Documents/personal-utility/scripts:$PATH
+export PATH=$PATH:$HOME/go/bin
