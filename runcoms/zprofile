@@ -71,3 +71,5 @@ export PATH=~/util:$PATH
 export PATH=~/Documents/personal-utility/scripts:$PATH
 
 command -v foo >/dev/null 2>&1 && eval "$(rbenv init -)"
+
+export PATH=$PATH:$HOME/go/bin
