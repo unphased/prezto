@@ -73,7 +73,11 @@ export PATH=~/Documents/personal-utility/scripts:$PATH
 command -v foo >/dev/null 2>&1 && eval "$(rbenv init -)"
 
 export PATH=$PATH:$HOME/go/bin
-export PATH=$PATH:/usr/local/Cellar/python/*/Frameworks/Python.framework/Versions/Current/bin
+
+# get python3 for brew
+PYTHONPATH=(/usr/local/Cellar/python/*/Frameworks/Python.framework/Versions/Current/bin)
+
+export PATH=$PATH:$PYTHONPATH[1]
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
