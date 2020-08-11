@@ -68,7 +68,7 @@ fi
 
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH=~/util:$PATH
-export PATH=~/Documents/personal-utility/scripts:$PATH
+export PATH=/usr/local/opt/llvm/bin/:$PATH
 
 command -v foo >/dev/null 2>&1 && eval "$(rbenv init -)"
 
